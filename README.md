@@ -23,7 +23,7 @@ My goal for each of the below topics is to achieve 100-200 hours of study, with 
 - [ ] Course: [MIT 18.06](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/)
 - [ ] Book: [Introduction to Linear Algebra (Gilbert Strang)](https://www.amazon.com/Introduction-Linear-Algebra-Gilbert-Strang/dp/0980232775/) 
 
-### 3 | Computer Architecture
+### 3 | Computer Architecture – [Quick Link](computer-architecture/nand2tetris/notes.md)
 - [ ] Book: [Computer Systems: A Programmer's Perspective (Randal Bryant)](http://csapp.cs.cmu.edu/3e/home.html)
 - [ ] Course: [Build a Modern Computer From First Principles](https://www.coursera.org/learn/build-a-computer)
 - [ ] Course: [Berkeley 61C](https://archive.org/details/ucberkeley-webcast-PL-XXv-cvA_iCl2-D-FS5mk0jFF6cYSJs_)
