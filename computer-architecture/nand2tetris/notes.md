@@ -8,7 +8,7 @@
 ## Intro
 - A programming language is an **abstraction**, so that you don't have to worry about the implementation (how the pixels show up on the screen, how the language interacts with the computer to give it instructions, etc.) 
 
-## Module 1: Boolean Functions and Gate Logic
+# Module 1: Boolean Functions and Gate Logic
 ## 1.1 Boolean Logic
 - Computers internally only have 0s and 1s (can also be considered No/Yes, False/True)
 
@@ -72,3 +72,35 @@ To simplify `NOT(NOT(x) AND NOT(x OR y))`:
   - Can also derive this using truth table
 
 ## 1.2 Boolean Function Synthesis
+- If only given a truth table, can you derive the Boolean function?
+  
+| x | y | z| f|
+|:-:|:-:|:-:|:-:|
+| 0 | 0 | 0 | 1 |
+| 0 | 0 | 1 | 0 |
+| 0 | 1 | 0 | 1 |
+| 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 1 |
+| 1 | 0 | 1 | 0 |
+| 1 | 1 | 0 | 0 |
+| 1 | 1 | 1 | 0 |
+
+- From the first line, we get `(NOT(x) AND NOT(y) AND NOT(z))`
+- From the third line, we get `(NOT(x) AND y AND NOT(z))`
+- From the fifth line, we get `(x AND NOT(y) AND NOT(z))`
+- Combining all three, we get `(NOT(x) AND NOT(y) AND NOT(z)) OR (NOT(x) AND y AND NOT(z)) OR (x AND NOT(y) AND NOT(z))`
+  - From the first two statements, we can remove the y, so we get `(NOT(x) AND NOT(z)) OR (x AND NOT(y) AND NOT(z))`
+
+### Nand
+- Any Boolean function can be represented using an expression containing AND and NOT operations (because we know that OR equals NOT AND using De Morgan Law)
+- However, the NAND function can simplify this: `NAND(x,y) = NOT(x AND y)`
+- **Any Boolean function can be repsented using an expression containing only NAND operations**
+  - `NOT(x) = (x NAND x)`
+  - `(x AND y) = NOT(x NAND y)`
+
+## 1.3 Logic Gates
+- Gate logic: a technique for implementing Boolean functions using logic gates
+  - **Elementary logic gate:** a standalone chip which is designed to deliver a well-defined functionality (NAND, AND, OR, NOT functionality)
+  - **Composite:** A logic made up from elementary logic gates and other composite logic gates, more complex than elementary (multiplexer, adder)
+
+### Elementary Logic Gates
